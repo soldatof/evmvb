@@ -156,14 +156,9 @@ function CheckViberServer(){
 		}
 	}
 	
-	if ( !isset($_SERVER['QUERY_STRING'])  ||  substr($_SERVER['QUERY_STRING'],0,5) !== "paid=" ){
-		
-		$isCorrect = false;
-		$incorrectMessage = 'no paid for save message'; 
-	}
 	else{
 
-		$paid = substr($_SERVER['QUERY_STRING'],5);
+		$paid = '1';
 
         $numV = strpos($paid,'?');
         
