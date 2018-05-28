@@ -156,18 +156,15 @@ function CheckViberServer(){
 		}
 	}
 	
-	else{
+	
+	$paid = "1";
 
-		$paid = '1';
-
-        $numV = strpos($paid,'?');
-        
-        if (!$numV===false){
-            $paid = substr($paid,0,$numV);
-        }
-        
-	}
-
+    $numV = strpos($paid,'?');
+       
+    if (!$numV===false){
+        $paid = substr($paid,0,$numV);
+    }
+    
 	if (!$isCorrect)
 		{
 		$DataBase = getConnectionDB();
