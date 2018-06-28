@@ -226,7 +226,7 @@ function ReadData()
 		
 		$arrResult[] = json_decode($document['content']);
 		
-		if(!$noDel)	$collection->deleteOne(['_id' => $document['_id']]);
+		//if(!$noDel)	$collection->deleteOne(['_id' => $document['_id']]);
 		
 	}
 	
